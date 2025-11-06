@@ -6,7 +6,7 @@ abstract class Pet{
   Pet(this.name){
     totalPets ++;
   }
-  void makeSound(); // Abstract method
+  void makeSound(); 
   Pet.named({required this.name}){
     totalPets ++;
   }
@@ -25,29 +25,29 @@ abstract class Friendly{
 
 class Dog extends Pet implements Friendly{
   Dog(String name): super(name);
-  Dog.named({required String name}): super.named(name: name); // Named constructor
+  Dog.named({required String name}): super.named(name: name); 
     @override
     void makeSound(){
-      print(' ${this.name} says : hav hav'); // this keyword kullanımı
+      print(' ${this.name} says : hav hav'); 
   }
   @override
   void beFriendly(){
-    print('${this.name} is friendly'); // this keyword kullanımı
+    print('${this.name} is friendly'); 
   }
 }
 
 class Bird extends Pet with Flyable implements Friendly{
   Bird(String name):super(name);
-  Bird.named({required String name}): super.named(name: name); // Named constructor
+  Bird.named({required String name}): super.named(name: name); 
 
   @override
   void makeSound(){
-    print('${this.name} says:cik cik'); // this keyword kullanımı
+    print('${this.name} says:cik cik'); 
   }
 
   @override
   void beFriendly() {
-    print('${this.name} is friendly'); // this keyword kullanımı
+    print('${this.name} is friendly'); 
   }
 
 }
@@ -55,16 +55,16 @@ class Bird extends Pet with Flyable implements Friendly{
 
 class Cat extends Pet implements Friendly{
   Cat(String name): super(name);
-  Cat.named({required String name}): super.named(name: name); // Named constructor
+  Cat.named({required String name}): super.named(name: name);
 
   @override
   void makeSound(){
-    print('${this.name} says:miyaw'); // this keyword kullanımı
+    print('${this.name} says:miyaw'); 
   }
   
   @override
   void beFriendly() {
-    print('${this.name} is friendly'); // this keyword kullanımı
+    print('${this.name} is friendly'); 
   }
 }
 

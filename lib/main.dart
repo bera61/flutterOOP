@@ -26,7 +26,7 @@ class MyHomePage extends StatelessWidget {
     final List<Pet> pets = [
       Dog('karabas'),
       Cat('misket'),
-      Bird.named(name: 'cicikus'), // Named constructor kullanımı
+      Bird.named(name: 'cicikus'), 
     ];
     return Scaffold(
       appBar: AppBar(
@@ -84,7 +84,7 @@ class MyHomePage extends StatelessWidget {
             child: Text(
               "Total Pets: ${Pet.totalPets}",
               style: const TextStyle(
-                  fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black87),
+                  fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black),
             ),
           ),
         ],
